@@ -1,0 +1,191 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: url('TI.png') no-repeat center center/cover;
+    height: 60vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Fondo negro con opacidad */
+    z-index: 1; /* Asegura que el fondo negro esté detrás del texto y elementos */
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 4em;
+    line-height: 1.2;
+    position: relative;
+    z-index: 2; /* Asegura que el texto esté sobre el fondo negro */
+}
+
+nav {
+    position: relative; /* Asegura que el nav esté sobre el fondo negro */
+    z-index: 2; /* Asegura que los enlaces estén sobre el fondo negro */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    display: block;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #2980b9;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+h2 {
+    color: #2980b9;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.service {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #2980b9;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+#mission-vision {
+    padding: 40px 0;
+    background-color: #f9f9f9; /* Opcional, para diferenciar del fondo de las secciones */
+}
+
+.mission-vision-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre los rectángulos */
+}
+
+.mission, .vision {
+    background-color: #ffffff; /* Fondo blanco para los rectángulos */
+    border: 2px solid #2980b9; /* Borde azul */
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1; /* Ocupa el mismo espacio */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 300px; /* Ajusta la altura mínima según sea necesario */
+    position: relative;
+}
+
+.mission .icon, .vision .icon {
+    display: block;
+    margin: 0 auto 20px; /* Centra la imagen y añade espacio debajo */
+    width: 60px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.mission h2, .vision h2 {
+    color: #2980b9;
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+.mission p, .vision p {
+    font-size: 1.2em;
+}
+
+
+.service-card {
+    position: relative;
+    width: 300px; /* Ajusta el ancho a tu preferencia */
+    height: 200px; /* Ajusta la altura a tu preferencia */
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.service-card h3 {
+    position: relative;
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-top: 0;
+    z-index: 2;
+}
+
+.service-card a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.service-card a:hover {
+    color: #f39c12;
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro con opacidad */
+    z-index: 1;
+}
+
+.small-image {
+    width: 400px; /*  tamaño  */
+    height: auto; 
+    object-fit: cover; 
+}
